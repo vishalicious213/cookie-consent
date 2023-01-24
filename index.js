@@ -16,7 +16,7 @@ closeBtn.addEventListener("click", function() {
 // prevent default submit/refresh behavior on form
 consentForm.addEventListener("submit", function(e) {
     const consentFormData = new FormData(consentForm)
-    console.log(consentFormData)
+    const userName = consentFormData.get("name")
     e.preventDefault()
     
     // changing modal-text message on submit
@@ -37,7 +37,7 @@ consentForm.addEventListener("submit", function(e) {
     // changing it again after another 1.5 seconds
     setTimeout(function() {
         document.getElementById('modal-inner').innerHTML =    `
-            <h2>Thanks you sucker!</h2>
+            <h2>Thanks <span class="modal-display-name">${userName}</span>, you sucker!</h2>
             <p>We just sold the rights to your eternal soul.</p>
             <div class="idiot-gif">
                 <img src="images/pirate.gif">
