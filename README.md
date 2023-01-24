@@ -49,4 +49,12 @@ Key HTML & CSS features included:
         - aria-labels
         - required
 
+## CSS concepts
+
+- position: fixed
+- cursor: pointer
+- cursor: not-allowed
+- opacity
+- flex-direction: row-reverse
+
 Deployed at: https://vish213-cookie-popup.netlify.app/
