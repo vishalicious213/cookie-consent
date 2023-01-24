@@ -33,6 +33,20 @@ Key HTML & CSS features included:
 - FormData()
     - FormData.get()
 - string / template literals
-- 
+
+## HTML concepts
+
+- \<main>
+- \<section>
+- \<button>
+    - disabled
+    - type="submit"
+    - type="button"
+- classes
+- ID's
+- forms
+    - \<input>
+        - aria-labels
+        - required
 
 Deployed at: https://vish213-cookie-popup.netlify.app/
