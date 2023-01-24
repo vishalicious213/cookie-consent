@@ -2,6 +2,8 @@ const modal = document.getElementById("modal")
 const closeBtn = document.getElementById("modal-close-btn")
 const consentForm = document.getElementById("consent-form")
 const modalText = document.getElementById("modal-text")
+const declineBtn = document.getElementById("decline-btn")
+const modalBtns = document.getElementById("modal-choice-btns")
 
 // make modal appear after 1.5 seconds
 setTimeout(function() {
@@ -46,4 +48,9 @@ consentForm.addEventListener("submit", function(e) {
         // enabling the X button after final message
         closeBtn.disabled = false
     }, 3000)
+})
+
+// when mouse goes over decline button, switch its place with accept button
+declineBtn.addEventListener("mouseenter", function() {
+    modalBtns.classList.toggle("modal-choice-btns-reverse")
 })
