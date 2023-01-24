@@ -14,4 +14,25 @@ Key HTML & CSS features included:
 - flex-direction: row-reverse, to keep the `Decline` button safely out of reach
 - 'disabled' attribute, to nullify the ability to close the modal until its nefarious purpose is served
 
+## JavaScript concepts
+
+- variables
+- functions
+- setTimeout()
+- document.getElementById()
+- element.style.display
+- element.innerHTML
+- element.textContent
+- element.disabled
+- element.classList.toggle()
+- addEventListener()
+    - "click"
+    - "submit"
+    - "mouseenter"
+- event.preventDefault()
+- FormData()
+    - FormData.get()
+- string / template literals
+- 
+
 Deployed at: https://vish213-cookie-popup.netlify.app/
