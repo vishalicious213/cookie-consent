@@ -15,8 +15,11 @@ closeBtn.addEventListener("click", function() {
 
 // prevent default submit/refresh behavior on form
 consentForm.addEventListener("submit", function(e) {
+    const consentFormData = new FormData(consentForm)
+    console.log(consentFormData)
     e.preventDefault()
-    console.log("Form submitted")
+    
+    // changing modal-text message on submit
     modalText.innerHTML = `
         <div class="modal-inner-loading">
             <img src="images/loading.svg" class="loading">
@@ -26,10 +29,12 @@ consentForm.addEventListener("submit", function(e) {
         </div>
     `
 
+    // changing message again after 1.5 seconds
     setTimeout(function() {
         document.getElementById('upload-text').textContent = `Making the sale...`
     }, 1500)
 
+    // changing it again after another 1.5 seconds
     setTimeout(function() {
         document.getElementById('modal-inner').innerHTML =    `
             <h2>Thanks you sucker!</h2>
