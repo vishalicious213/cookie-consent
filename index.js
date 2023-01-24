@@ -1,6 +1,7 @@
 const modal = document.getElementById("modal")
 const closeBtn = document.getElementById("modal-close-btn")
 const consentForm = document.getElementById("consent-form")
+const modalText = document.getElementById("modal-text")
 
 // make modal appear after 1.5 seconds
 setTimeout(function() {
@@ -16,4 +17,12 @@ closeBtn.addEventListener("click", function() {
 consentForm.addEventListener("submit", function(e) {
     e.preventDefault()
     console.log("Form submitted")
+    modalText.innerHTML = `
+        <div class="modal-inner-loading">
+            <img src="images/loading.svg" class="loading">
+            <p id="uploadText">
+                Uploading your data to the dark web...
+            </p>
+        </div>
+    `
 })
